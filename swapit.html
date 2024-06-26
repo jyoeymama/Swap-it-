@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap-it!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Swap-it!</h1>
+            <p>Find what you need, trade what you have.</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#items">Items</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>Welcome to Swap-it!</h2>
+                <p>Discover items others are willing to trade and list your own.</p>
+            </div>
+        </section>
+        
+        <section id="items">
+            <div class="container">
+                <h2>Available Items</h2>
+                <div class="item">
+                    <h3>Item Title</h3>
+                    <p>Description of the item being traded.</p>
+                    <button>Contact Trader</button>
+                </div>
+                <!-- More items can be added dynamically or statically -->
+            </div>
+        </section>
+        
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Contact me and learn more about us and our mission!.</p>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contactForm" action="#" method="post">
+                    <label for="name">Your Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                    
+                    <label for="email">Your Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Swap-it! All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>\
+<form id="contactForm" action="http://localhost:3000/submit" method="post">
+    <!-- Form fields remain the same as before -->
+</form>
+<!-- Example JavaScript for a slideshow -->
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1; }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+</script>
